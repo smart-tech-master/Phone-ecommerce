@@ -1,0 +1,27 @@
+@import 'assets/scss/main.scss';
+
+.modal_watch_video{
+  .modal{
+    display: block;
+    
+    img{
+      max-width: 100%;
+    }
+
+    .close_modal{
+      position: absolute;
+      top: 4px;
+      left: 96%;
+      background: $transparent_black;
+      width: 20px;
+      height: 20px;
+      text-align: center;
+      color: $white_background;
+      cursor: pointer;
+    }
+    
+    .modal-body{
+      padding: 0;
+    }
+  }
+}

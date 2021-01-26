@@ -1,0 +1,58 @@
+@import 'assets/scss/main.scss';
+
+.ipn-rp {
+  padding: 25px 0px 12px 15px;
+  width: 100%;
+  float: left;
+  /* display: none; */
+  p {
+    color: $dark_grey;
+    font-size: $fnt16;
+    padding-bottom: 23px;
+    font-weight: 700;
+  }
+  .ipn-cont {
+    width: 32%;
+    background: $white_background;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+    padding: 14px 15px;
+  }
+}
+
+.ipn-box {
+  @include flex_btwn(flex, space-between);
+  flex-wrap: wrap;
+}
+.vsbt-cont {
+  width: 13%;
+  display: flex;
+  align-items: center;
+  border: 1px solid #e8edf2;
+  border-radius: 10px;
+  padding: 10px;
+  .vsbt-para {
+    p {
+      font-size: $fnt8;
+      text-align: left;
+      margin-top: 5px;
+    }
+    h3 {
+      font-size: $fnt14;
+    }
+  }
+}
+
+.vsbt-img {
+  width: 45px;
+  height: 45px;
+  text-align: center;
+  img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+
+.vsbt-para {
+  margin-left: 6px;
+}

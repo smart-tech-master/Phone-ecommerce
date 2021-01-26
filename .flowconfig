@@ -1,0 +1,40 @@
+[ignore]
+.*/src/redux/.*
+./src/serviceWorker.js
+.*/src/serviceWorker\.js
+.*/src/index\.js
+
+[libs]
+
+[lints]
+
+[untyped]
+.*/node_modules/.*
+.*/build/.*
+.*/public/.*
+
+[options]
+module.system.node.resolve_dirname=node_modules
+esproposal.decorators=ignore
+esproposal.class_static_fields=enable
+esproposal.class_instance_fields=enable
+suppress_comment= \\(.\\|\n\\)*\\$FlowFixMe
+suppress_comment= \\(.\\|\n\\)*\\$flow-disable-line
+
+module.file_ext=.js
+module.file_ext=.json
+module.file_ext=.jsx
+module.file_ext=.css
+module.file_ext=.scss
+
+module.name_mapper='^components\(.*\)$' -> '<PROJECT_ROOT>/src/components/\1'
+module.name_mapper='^containers\(.*\)$' -> '<PROJECT_ROOT>/src/containers/\1'
+module.name_mapper='^common\(.*\)$' -> '<PROJECT_ROOT>/src/common/\1'
+module.name_mapper='^redux\(.*\)$' -> '<PROJECT_ROOT>/src/redux/\1'
+module.name_mapper='^routes\(.*\)$' -> '<PROJECT_ROOT>/src/routes/\1'
+module.name_mapper='^utils\(.*\)$' -> '<PROJECT_ROOT>/src/utils/\1'
+
+[strict]
+
+[version]
+^0.107.0

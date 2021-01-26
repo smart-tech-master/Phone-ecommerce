@@ -1,0 +1,51 @@
+@import 'assets/scss/main.scss';
+
+.vs-section {
+  background: $white_background;
+  border-top: 1px solid #eef2f6;
+  border-bottom: 1px solid #eef2f6;
+  padding: 17px 0;
+  z-index: 100;
+
+  .vs-img {
+    display: flex;
+    position: relative;
+  }
+}
+
+.vs-container {
+  width: 88%;
+  margin: auto;
+}
+
+.arrow_lft {
+  color: $dark_grey;
+  margin-right: 13px;
+}
+
+.arrow_rgt {
+  color: $place_holder;
+}
+
+.cstm_bredcum {
+  margin-left: 10px;
+
+
+  li {
+    display: inline-block;
+
+    a {
+      color: $dark_grey;
+      font-size: 12px;
+
+      i {
+        margin: 0 2px;
+      }
+    }
+
+    .content_style {
+      letter-spacing: -0.24px;
+      color: black;
+    }
+  }
+}

@@ -1,0 +1,86 @@
+@import 'assets/scss/main.scss';
+
+.login_box {
+  width: 40%;
+  margin-top: 3%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding: 20px 60px 20px 60px;
+  background-color: #fff;
+  img {
+    padding: 20px;
+  }
+  p {
+    font-size: 20px;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .form_group {
+    text-align: left;
+    padding: 20px;
+    label {
+      margin-top: 20px;
+    }
+  }
+  .input_password {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    .eye_icon {
+      position: absolute;
+      display: inline-block;
+      top: 7px;
+      right: 7px;
+    }
+    .forget_label {
+      float: right;
+    }
+    .login_button {
+      text-align: center;
+      margin-top: 50px;
+    }
+  }
+  .button_group {
+    padding-top: 50px;
+    text-align: center;
+    button {
+      margin: 5px;
+      width: 48%;
+      span {
+        float: left;
+      }
+    }
+  }
+}
+
+@include screen-large {
+  .login_box{
+    width: 60%;
+  }
+}
+
+@include screen-medium {
+  .login_box{
+    width: 80%;
+  }
+}
+
+@include screen-small {
+  .login_box{
+    width: 100%;
+  }
+}
+
+@include screen-small {
+  .button_group button{
+    margin: 5px;
+    width: 100%;
+  }
+}
+
+
+
+
+

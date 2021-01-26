@@ -1,0 +1,25 @@
+@import 'assets/scss/main.scss';
+
+.review{
+  padding-top: 20px;
+  .review_info{
+    display: inline-flex;
+  }
+  .review_text{
+    width: 95%;
+    .review_name{
+      padding: 13px;
+    }
+    .review_time{
+      padding: 13px;
+      color: $light_grey;
+    }
+    .left_review{
+      padding: 13px;
+    }
+    .edit_review{
+      float: right;
+      color: $gradnt_dark_blue2;
+    }
+  }
+}

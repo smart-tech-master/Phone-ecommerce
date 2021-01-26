@@ -1,0 +1,27 @@
+@import 'assets/scss/main.scss';
+
+.brand_pic_part {
+
+  display: flex;
+
+  .pic1 {
+    width: 50%;
+
+    .image1 {
+      width: 100%;
+    }
+  }
+
+  .pic2 {
+    width: 50%;
+    display: block;
+
+    .image2 {
+      width: 100%;
+    }
+
+    .image3 {
+      width: 100%;
+    }
+  }
+}

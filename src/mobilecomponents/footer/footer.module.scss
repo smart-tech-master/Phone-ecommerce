@@ -1,0 +1,41 @@
+@import 'assets/scss/main.scss';
+
+.footer_container{
+  height: 393px;
+  background-color: $white-background;
+  display: flex;
+  flex-direction: row;
+  padding: 93px 79px 0px 79px;
+  
+  .logo{
+    img{
+      height: 68px;
+    }
+    .rights{
+      font-size: $fnt14;
+      margin-top: 15px;
+    }
+  }
+
+  .columns_cont{
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    .col_cont{
+      margin-right: 140px;
+      h2{
+        font-size: $fnt20;
+        font-weight: bolder;
+        margin-bottom: 14px;
+      }
+      .link_cont{
+        font-size: $fnt16;
+        color: $transparent_dark_grey;
+        margin-bottom: 12px;
+        a{
+          color: $transparent_dark_grey;
+        }
+      }
+    }
+  }
+}

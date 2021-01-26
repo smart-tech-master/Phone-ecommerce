@@ -1,0 +1,48 @@
+@import 'assets/scss/main.scss';
+
+.mobile_wrapper{
+  //.item_row {
+  //  @include fullWidth(100%, left);
+  //  @include flex_btwn(flex, space-between);
+  //  margin-top: 20px;
+  //}
+  .m_item_row_lft {
+    @include flex_align_center(flex, center);
+  }
+  .m_mobile_icn {
+    //width: 35px;
+    //height: 35px;
+    width: 36px;
+    height: 47px;
+    padding-right: 5px;
+    img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+  }
+  .m_mobile_contnt {
+    h4 {
+      color: $dark_grey;
+      font-size: $fnt14;
+    }
+    p {
+      color: $dark_grey;
+      font-size: 12px;
+      opacity: 1;
+      margin-top: 3px;
+    }
+  }
+  .m_item_row_rgt button {
+    //border: 1px solid $place_holder;
+    border: none;
+    border-radius: 0;
+    background: transparent;
+    padding: 6px 10px;
+    font-size: $fnt12;
+    color: $dark_grey;
+  }
+  .m_mobile_icn img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+}

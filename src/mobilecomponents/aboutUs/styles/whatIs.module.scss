@@ -1,0 +1,93 @@
+@import 'assets/scss/main.scss';
+
+.text {
+  display: inline-block;
+  width: 30%;
+  min-width: 315px;
+
+  h1 {
+    max-width: 100%;
+    margin: 82px 0 18px 0;
+    max-width: 100%;
+    font-size: 72px;
+    color: #242b2e;
+    letter-spacing: -3.56px;
+    font-family: sans-serif;
+    font-weight: 900;
+  }
+
+  .description {
+    display: inline-block;
+    width: 92%;
+    //font-size: $fnt22;
+    font-size: 22px;
+    border-left: 3px solid #03a9f4;
+    padding-left: 17px;
+    font-weight: 100;
+    line-height: 1.4;
+  }
+}
+
+.photos {
+  width: 60%;
+  position: relative;
+  margin: 82px 0 0 auto;
+  overflow: hidden;
+  padding-right: 103px;
+  min-width: 680px;
+
+  .cards,
+  .background {
+    width: 100%;
+  }
+
+  .mocup,
+  .photo {
+    position: absolute;
+    bottom: 0;
+    right: -148px;
+    width: 116%;
+  }
+}
+
+.what_is_part {
+  padding: 0 0 52px 79px;
+  display: flex;
+  color: $transparent_dark_grey;
+
+  .text_tag {
+    margin-top: 55px;
+    font-size: 20px;
+    letter-spacing: 0.9px;
+    //font-size: $fnt22;
+
+    span {
+      //font-size: $fnt24;
+      font-size: 20px;
+      font-weight: 700;
+      font-style: italic;
+      letter-spacing: 0.5px;
+      color: black;
+    }
+  }
+
+  .see_brand_button {
+    cursor: pointer;
+    text-align: center;
+    color: $blue_color;
+    // font-size: $fnt18;
+    font-size: 16px;
+    font-weight: 600;
+    width: 278px;
+    height: 74px;
+    background: $transparent_white_backgrond;
+    box-shadow: 0px 3px 6px $grey_shadow;
+    border: 2px solid $blue_color;
+    border-radius: 6px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+}

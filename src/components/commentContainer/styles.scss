@@ -1,0 +1,115 @@
+@import 'assets/scss/main.scss';
+
+.review-container {
+  width: 100%;
+  float: left;
+  padding: 30px 0px 25px 15px;
+  position: relative;
+  background: #f6f8fa;
+  display: block;
+
+}
+
+.content {
+  width: 100%;
+  background-color: white;
+  display: block;
+  padding: 20px;
+}
+
+.titles {
+  font-size: $fnt18;
+}
+
+.img-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+.comment {
+  padding-top: 20px;
+  display: flow-root;
+}
+
+.avatar-input {
+  display: flex;
+  position: relative;
+}
+
+.input-comment {
+  width: 100%;
+  height: 50px !important;
+  overflow: auto;
+  margin-left: 10px;
+}
+
+.from-boder {
+  border: solid 1px;
+  border-radius: 7px;
+}
+
+.raty-button {
+  display: flex;
+  float: right;
+  padding-top: 15px;
+}
+
+.forget-text {
+  padding: 12px;
+}
+
+.btn-comment {
+  border: 1px solid $gradnt_dark_blue2;
+  background-color: $gradnt_dark_blue1;
+  color: $gradnt_dark_blue2;
+  margin-left: 5px;
+}
+
+.btn-modify {
+  border: none;
+  background: #03A9F433;
+  padding: 10px;
+  border: 1px solid #03A9F480;
+}
+
+.ask-text {
+  font-weight: 600;
+  margin-left: 10px;
+  color: rgb(3, 169, 244);
+}
+
+.emoji-content {
+  position: absolute;
+  right: 4px;
+  top: 27px;
+}
+
+.img-emoji {
+  cursor: pointer;
+}
+
+.emojis {
+  width: 220px;
+  height: 295px;
+  position: absolute;
+  border: 1px solid #eeeeee;
+  right: -5px;
+  top: 22px;
+  z-index: 100;
+  padding: 16px 17px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  color: #242b2e;
+
+  ;
+}
+
+.posted {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding: 20px;
+}

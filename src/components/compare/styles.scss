@@ -1,0 +1,104 @@
+@import 'assets/scss/main.scss';
+
+.add_item_part {
+  width: 386px;
+  height: 181px;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 0px 0px 14px #0000000D;
+  border-radius: 16px;
+  opacity: 1;
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+  position: absolute;
+  bottom: 340px;
+  right: 100px;
+  padding: 23px;
+
+  .add_button {
+    width: 344px;
+    height: 42px;
+    background: #03A9F4 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #0000000D;
+    border-radius: 4px;
+    opacity: 1;
+    margin-top: 10px;
+    font-size: 16px;
+    font-family: sans-serif;
+    border: none;
+    outline: none;
+  }
+
+  .image_size1 {
+    width: 50px;
+    height: 50px;
+  }
+
+  .add_title {
+    display: flex;
+    justify-content: space-between;
+
+    .opcity_remove {
+      opacity: 0.5;
+      cursor: pointer;
+    }
+  }
+
+  .item_ul {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+
+  }
+
+  .added_part {
+    margin-left: 5px;
+  }
+
+  .compare_titles {
+    display: flex;
+    padding: 5px;
+    border: 1px solid #eff0f2;
+    border-radius: 10px;
+    position: relative;
+
+    .topic_part {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+
+    }
+
+
+
+  }
+
+  .remove_item {
+    background: #242B2ECC 0% 0% no-repeat padding-box;
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    outline: none;
+    border: none;
+    color: white;
+    position: absolute;
+    right: 6px;
+
+    .fa-plus:before {
+      content: "\f067";
+    }
+  }
+}
+
+.brand_title {
+  font-size: 11px;
+  opacity: 0.7;
+}
+
+.device_name {
+  font-size: 13px;
+  font-family: sans-serif;
+}

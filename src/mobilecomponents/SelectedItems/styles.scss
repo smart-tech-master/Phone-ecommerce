@@ -1,0 +1,37 @@
+@import 'assets/scss/main.scss';
+
+.tick-drp {
+  position: absolute;
+  background: $white_background;
+  right: -10%;
+  max-width: 380px;
+  width: 100%;
+  padding: 21px 22px;
+  border-radius: 16px;
+  bottom: 0;
+  .tick-cont {
+    text-align: left;
+  }
+  button {
+    padding: 15px 10px;
+    border: none;
+    background: $blue_color;
+    color: #fff;
+    width: 100%;
+  }
+}
+.tick-drp .d-fex {
+  display: flex;
+}
+.tick-drp .vsbt-cont {
+  padding: 10px 0px;
+  margin: 15px 0px;
+  position: relative;
+  width: 30.3%;
+  margin-right: 10px;
+}
+.tick-drp .vsbt-cont .vs-minus {
+  position: absolute;
+  right: -3px;
+  top: -3px;
+}

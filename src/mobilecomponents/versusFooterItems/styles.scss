@@ -1,0 +1,83 @@
+@import 'assets/scss/main.scss';
+
+/*============== START bottom slider vs=================*/
+.vs-rgt {
+  @include fullWidth(100%, left);
+  @include flex_align_center(flex, center);
+  background: $white_background;
+  padding: 20px 20px 30px 20px;
+}
+.vs-text {
+  width: 22px;
+  height: 22px;
+  background: $blue_color;
+  text-align: center;
+  border-radius: 50%;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  font-size: 12px;
+  line-height: 22px;
+  padding: 0 5px;
+}
+/*============== END bottom slider vs=================*/
+
+/*============== Start slide Horizontal vs=================*/
+
+.slideshow_row {
+  @include fullWidth(100%, left);
+  @include flex_align_center(flex, center);
+  background: $white_background;
+  text-align: center;
+  justify-content: center;
+  padding-bottom: 10px;
+  .slide_platfrom {
+    width: 159px;
+    background: $place_holder;
+    border-radius: 13px;
+    position: relative;
+    float: left;
+    height: 15px;
+  }
+  .slide_toggle {
+    background: $blue_color;
+    color: #fff;
+    padding: 0 15px;
+    border-radius: 11px;
+    position: absolute;
+    left: 0;
+    font-size: $fnt10;
+  }
+}
+/*============== End slide Horizontal vs=================*/
+.vsbt-cont {
+  width: 13%;
+  display: flex;
+  align-items: center;
+  border: 1px solid #e8edf2;
+  border-radius: 10px;
+  padding: 10px;
+  .vsbt-para {
+    h3 {
+      font-size: $fnt14;
+    }
+  }
+}
+
+.vsbt-img {
+  width: 45px;
+  height: 45px;
+  text-align: center;
+  img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+.vsbt-para {
+  margin-left: 6px;
+  p {
+    font-size: $fnt8;
+    text-align: left;
+    margin-top: 5px;
+  }
+}

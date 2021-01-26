@@ -1,0 +1,81 @@
+@import 'assets/scss/main.scss';
+
+.brand_font_part {
+  padding: 40px 79px 40px 79px;
+  background: white;
+
+  .font_part {
+
+    display: flex;
+    justify-content: space-between;
+    margin-top: 37px;
+
+    .font {
+      display: flex;
+
+
+      .rect {
+        width: 141px;
+        height: 141px;
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        box-shadow: 0px 3px 25px #0000001A;
+        border: 1px solid #12121233;
+        border-radius: 12px;
+        opacity: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .font_description {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .margin_adjust {
+          margin-top: 10px;
+          color: #242B2E;
+          font-size: 16px;
+          letter-spacing: 0.64px;
+        }
+
+
+      }
+    }
+
+  }
+
+  .small_font {
+    font-size: 24px;
+    //  font-family: sans-serif;
+  }
+
+  .big_font {
+    font-size: 62px;
+    //  font-family: sans-serif;
+  }
+
+  .medium_font {
+    font-size: 28px;
+    // font-family: sans-serif;
+  }
+
+  .brown_font {
+    font-size: 22px;
+  }
+
+  .brown_font1 {
+    font-size: 12px;
+  }
+
+  .text_adjust {
+    margin-bottom: 15px;
+    font-family: sans-serif;
+    letter-spacing: 0.96px;
+    /* color: #242B2E; */
+    text-transform: capitalize;
+    /* opacity: 1; */
+    font-weight: 900;
+    font-size: 24px;
+  }
+}

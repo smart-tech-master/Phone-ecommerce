@@ -1,0 +1,265 @@
+@import 'assets/scss/main.scss';
+
+/*=============== Start rightPanel ==========*/
+.header {
+    background: $white_background;
+    display: flex;
+    align-items: center;
+    .headertxt {
+    padding-left: 100px;
+    font-size: 15px;
+    }
+}
+.smalltitletxt {
+    padding: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+/*=============== Start SelectProfile ==========*/
+.previews {
+    display: flex;
+    border-radius: 5px;
+    border-width: 1px;
+    height: 152px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border: 1px solid #ccc;
+    width: 97%;
+}
+.thumbsContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.thumb {
+    display: inline-flex;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    width: 150px;
+    height: 150px;
+    box-sizing: border-box;
+    padding: 15px;
+}
+.thumbInner {
+    display: flex;
+    min-width: 0;
+    overflow: hidden;
+    border-radius: 70px;
+};
+.img {
+    display: block;
+    width: auto;
+    height: 100%;
+};
+.dragedroppanel {
+    display: inline-flex;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: 1px dashed #ccc;
+    width: 90%;
+    height: 150px;
+    box-sizing: border-box;
+    padding: 15px;
+    background-color: #e9eef2;
+    align-items: center;
+}
+
+.main {
+    background: $white_background;
+    align-items: center;
+}
+.txt {
+    padding: 30px;
+    padding-bottom: 0px;
+    font-size: 15px;
+}
+.dragdrop {
+    height: 100%;
+    padding: 5px;    
+}
+.dragdroppreview {
+    padding: 5px;
+    padding-left: 30px;
+}
+
+.inputdata {
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    .inptxt {
+        background-color: #e9eef2;
+        height: 40px;
+        width: 100%;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 5px;
+        font-size: 13px;
+    }
+}
+
+.genderdata {
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    .checkdiv {
+        
+        display: flex;
+    }
+}
+
+.interest {
+    padding: 10px;
+    padding-left: 30px;
+    margin-top: 25px;
+    .inpttxt {
+        background-color: #e9eef2;
+    }
+}
+.searchDiv {
+    border: 1px solid #e9eef2;
+    height: 42px;
+    background-color: #e9eef2;
+    border-radius: 3px;
+    display: flex;
+}
+.addtxt {
+    height: 40px;
+    background-color: transparent;
+    border-width: 0px;
+    width: 100%;    
+}
+.addPro {
+    display: flex;    
+}
+.addItem {
+    background-color: #e9eef2;
+    border-radius: 5px;
+    height: 40px;
+    margin: 5px;
+    padding: 5px; 
+    display: flex;     
+}
+.categories {
+    padding: 10px;
+    padding-left: 30px;
+    margin-top: 25px;
+
+    .dragcategories{
+        background-color: #f5f5f5;
+        border: 1px solid #e9eef2;
+        border-radius: 5px;
+        height: 100%;
+        width: 95%;
+    }
+    .addItem {
+        background-color: #e9eef2;
+        border-radius: 5px;
+        height: 30px;
+        margin: 5px;
+        display: inline-flex;     
+    }
+}
+
+.submitbnt {
+    height: 100px;
+    padding: 15px;
+    display: flex;
+    .savebnt {
+        height: 40px;
+        background-color: #00a8ef;
+        border-radius: 5px;
+        padding-left: 20px;
+        padding-right: 20px;
+        border: 0px solid #fff;
+        margin-left: 30px;
+        margin-right: 30px;
+        color: #fff;
+    }
+    .revertbnt {
+        height: 40px;
+        background-color: #f5f5f5;
+        border-radius: 5px;
+        padding-left: 20px;
+        padding-right: 20px;
+        border: 0px solid #fff;
+        color: #000;
+    }
+}
+
+
+/*=============== Start SelectBlocks ==========*/
+.selectdata {
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .inptxt {
+        background-color: #e9eef2;
+        height: 40px;
+        width: 100%;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 5px;
+        font-size: 13px;
+    }
+}
+.psize3bold {
+    font-size: 17px;
+    padding: 5px;
+    font-weight: bold;
+}
+.psize2 {
+    font-size: 13px;
+    padding: 5px;
+}
+.bottomboderdiv {
+    border-bottom: 1px solid #eee;
+}
+
+
+
+
+
+
+
+
+
+
+/*=============== Start SearchSelect ==========*/
+.interest {
+    padding: 10px;
+    padding-left: 30px;
+    width: 100%;
+}
+
+.inpttxt {
+    background-color: #eee;
+}
+.addPro {
+    display: flex;    
+}
+.addItem {
+    background-color: #e9eef2;
+    border-radius: 5px;
+    height: 40px;
+    margin: 5px;
+    padding: 0px; 
+    display: flex;    
+}
+.searchbar {
+    width: 100%;
+}
+
+.categoItem{
+  padding: 3px 0px;
+}
+
+div.categories p{
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 14px;
+}

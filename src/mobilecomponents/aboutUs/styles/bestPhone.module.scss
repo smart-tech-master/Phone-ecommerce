@@ -1,0 +1,127 @@
+@import 'assets/scss/main.scss';
+
+.text {
+  display: inline-block;
+  width: 30%;
+  min-width: 315px;
+
+  h1 {
+    margin: 82px 0 18px 0;
+    max-width: 100%;
+    max-width: 100%;
+    font-size: 72px;
+    color: white;
+    letter-spacing: -3.56px;
+    font-family: sans-serif;
+    font-weight: 900;
+  }
+
+  .description {
+    display: inline-block;
+    width: 92%;
+    //font-size: $fnt22;
+    font-size: 22px;
+    border-left: 3px solid #03a9f4;
+    padding-left: 17px;
+    font-weight: 100;
+    line-height: 1.4;
+    //letter-spacing: -0.9px;
+  }
+}
+
+.photos {
+  width: 60%;
+  position: relative;
+  margin: 82px 0 0 auto;
+  overflow: hidden;
+  padding-right: 103px;
+  min-width: 680px;
+
+  .cards,
+  .background {
+    width: 100%;
+  }
+
+  .mocup,
+  .photo {
+    position: absolute;
+    bottom: 0;
+    right: -148px;
+    width: 116%;
+  }
+}
+
+.best_phone_part {
+  background: transparent linear-gradient(251deg, #28469D 0%, #6C4FA6 100%);
+  padding: 96px 0 145px 7px;
+  color: $white_background;
+  display: flex;
+  min-width: 1100px;
+
+  .text {
+    margin-left: 79px;
+    width: 50%;
+
+    h1 {
+      color: $white_background;
+    }
+
+    .description {
+      border-left: 3px solid $white_background;
+    }
+
+    .input {
+      position: relative;
+
+      input {
+        margin-top: 64px;
+        width: 475px;
+        height: 92px;
+        border: 1px solid $grey_border;
+        border-radius: 8px;
+        padding: 0 200px 0 28px;
+        color: $dark_grey;
+      }
+
+      .button_try_now {
+        width: 172px;
+        height: 84px;
+        background: $blue_color;
+        box-shadow: 0px 3px 6px $grey_shadow;
+        border-radius: 6px;
+        opacity: 1;
+        cursor: pointer;
+        position: absolute;
+        font-size: $fnt18;
+        top: 69px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        right: 134px;
+      }
+
+      .for_example {
+        margin-top: 14px;
+        font-size: $fnt14;
+        font-family: lighter;
+
+        span {
+          color: $transparent_white_text;
+        }
+      }
+    }
+  }
+
+  .photos {
+    padding-right: 0;
+
+    .photo {
+      top: -39px;
+      right: -49px;
+      width: 100%
+    }
+  }
+
+
+
+}

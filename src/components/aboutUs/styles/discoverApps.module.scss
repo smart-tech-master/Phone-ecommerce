@@ -1,0 +1,117 @@
+@import 'assets/scss/main.scss';
+
+.text {
+  display: inline-block;
+  width: 30%;
+  min-width: 315px;
+
+  h1 {
+    margin: 82px 0 18px 0;
+    max-width: 100%;
+    margin: 82px 0 18px 0;
+    max-width: 100%;
+    font-size: 72px;
+    color: black;
+    letter-spacing: -3.56px;
+    font-family: sans-serif;
+    font-weight: 900;
+  }
+
+  .description {
+    display: inline-block;
+    width: 92%;
+    //font-size: $fnt22;
+    font-size: 22px;
+    border-left: 3px solid #03a9f4;
+    padding-left: 17px;
+    font-weight: 100;
+    line-height: 1.4;
+  }
+}
+
+.discover_apps {
+  background: $white_background;
+  color: $transparent_dark_grey;
+
+  .text {
+    margin: 0 0 51px 79px;
+  }
+
+  .our_apps {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+
+    .app:nth-child(odd) {
+      background-color: $primary-color;
+    }
+
+    .app {
+      height: 288px;
+      width: 33%;
+      display: inline-block;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      .app_name {
+        margin-top: 21px;
+        font-weight: bolder;
+        font-size: $fnt24;
+      }
+
+      .app_cont {
+        width: 114px;
+        height: 114px;
+        box-shadow: 0px 4px 14px $grey_shadow2;
+        border-radius: 22px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;
+        color: $white_background;
+
+        p {
+          font-size: $fnt12;
+          margin-top: 9px;
+        }
+      }
+
+      .description {
+        text-align: center;
+        margin: 21px 30px 0 30px;
+      }
+    }
+
+    .vs1 .app_cont {
+      background: transparent linear-gradient(127deg, $gradnt_dark_blue1 0%, $gradnt_dark_blue2 100%) 0% 0% no-repeat padding-box;
+    }
+
+    .explore .app_cont {
+      background: transparent linear-gradient(127deg, $gradnt_light_blue1 0%, $gradnt_light_blue2 100%) 0% 0% no-repeat padding-box;
+    }
+
+    .indiegogo .app_cont {
+      background: transparent linear-gradient(127deg, $gradnt_pink1 0%, $gradnt_pink2 100%) 0% 0% no-repeat padding-box;
+
+      img,
+      p {
+        margin-top: -20px;
+      }
+    }
+
+    .vs2 .app_cont {
+      background: transparent linear-gradient(127deg, $gradient_purple1 0%, $gradient_purple2 100%) 0% 0% no-repeat padding-box;
+    }
+
+    .ces .app_cont {
+      background: transparent linear-gradient(127deg, $gradnt_orange1 0%, $gradnt_orange2 100%) 0% 0% no-repeat padding-box;
+    }
+
+    .kickstarter .app_cont {
+      background: transparent linear-gradient(127deg, $gradnt_green1 0%, $gradnt_green2 100%) 0% 0% no-repeat padding-box;
+    }
+  }
+}

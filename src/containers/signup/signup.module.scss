@@ -1,0 +1,168 @@
+@import 'assets/scss/main.scss';
+
+.email_box {
+  width: 40%;
+  margin-top: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding: 20px 80px 20px 80px;
+  background-color: #fff;
+  border-radius: 10px;
+  max-width: 620px;
+
+  img {
+    padding: 20px;
+  }
+
+  p {
+    font-size: 18px;
+    padding: 5px 20px 5px 5px;
+  }
+
+  .form_group {
+    padding-top: 30px;
+
+    label {
+      float: left;
+      font-weight: 400;
+    }
+  }
+
+  .input_email {
+    position: relative;
+    padding: 5px 15px 5px 5px;
+  }
+
+  .blue_arrow {
+    position: absolute;
+    right: 15px;
+    top: 25px;
+    cursor: pointer;
+    padding: 8px 10px 6px 10px;
+    background-color: $blue_color;
+    border-radius: 0px 5px 5px 0px;
+    display: inline-block;
+
+    i {
+      font-size: 16px;
+      color: white;
+    }
+  }
+
+  .button_group {
+    padding-top: 50px;
+
+    button {
+      margin: 5px;
+      width: 47%;
+      font-size: 15px;
+      padding: 10px;
+
+      span {
+        float: left;
+      }
+    }
+  }
+}
+
+.btn_dark {
+  background-color: black;
+  color: white;
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.3333333;
+  border-radius: 6px;
+}
+
+.password_box {
+  width: 40%;
+  margin-top: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding: 20px 80px 20px 80px;
+  background-color: #fff;
+
+  img {
+    padding: 20px;
+  }
+
+  p {
+    font-size: 18px;
+    padding: 5px 20px 5px 5px;
+  }
+
+  .form_group {
+    text-align: left;
+    padding: 20px;
+  }
+
+  .input_password {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .input_email {
+    position: relative;
+  }
+
+  .button_group {
+    padding-top: 50px;
+    text-align: center;
+  }
+
+  .eye_icon {
+    position: absolute;
+    display: inline-block;
+    top: 7px;
+    right: 7px;
+  }
+}
+
+@include screen-large {
+
+  .email_box,
+  .password_box {
+    width: 60%;
+  }
+}
+
+@include screen-medium {
+
+  .email_box,
+  .password_box {
+    width: 80%;
+  }
+}
+
+@include screen-small {
+
+  .email_box,
+  .password_box {
+    width: 100%;
+  }
+}
+
+@include screen-small {
+  .button_group button {
+    margin: 5px;
+    width: 100%;
+  }
+}

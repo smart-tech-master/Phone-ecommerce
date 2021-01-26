@@ -1,0 +1,45 @@
+@import 'assets/scss/main.scss';
+
+.about_header {
+  background: white;
+}
+
+.about_us_page {
+  box-sizing: content-box;
+  min-width: 1100px;
+  display: flex;
+  flex-direction: column;
+
+  .already_excited {
+    height: 233px;
+    background: $white_background;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    .text {
+      font-size: $fnt48;
+    }
+
+    .button {
+      width: 215px;
+      height: 84px;
+      background: $blue_color;
+      box-shadow: 0px 3px 6px $grey_shadow;
+      border-radius: 6px;
+      color: $white_background;
+      font-size: $fnt18;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      margin-left: 42px;
+    }
+
+    div {
+      display: inline-block;
+      align-self: center
+    }
+  }
+}

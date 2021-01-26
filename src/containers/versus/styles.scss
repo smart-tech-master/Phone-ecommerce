@@ -1,0 +1,832 @@
+@import 'assets/scss/main.scss';
+
+#versus-page {
+  overflow-y: scroll !important;
+}
+
+button:focus {
+  outline: none !important;
+}
+
+.wrapper {
+  @include fullWidth(100%, left);
+  position: relative;
+  overflow: hidden;
+}
+
+.header-wrapper {
+  background: $white_background;
+  padding-top: 15px;
+  padding-bottom: 16px;
+}
+
+.feedback-style {
+  width: 146px;
+  height: 42px;
+  background: #03A9F4 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #0000000D;
+  border-radius: 4px;
+  opacity: 1;
+  border: none;
+  outline: none;
+  color: white;
+}
+
+.vs-box {
+  display: flex;
+}
+
+.vs-lft.d_flex {
+  height: calc(100vh - 300px);
+  display: flex;
+  //height: auto;
+}
+
+.vs-lft.d_flex.vs_banner_disable {
+  height: 100% !important;
+}
+
+.vs_lists {
+  width: 100%;
+  height: 100%;
+  // overflow: hidden;
+  // overflow-x: scroll;
+  display: flex;
+
+}
+
+/*=============== Start right panel vs==========*/
+
+.vs-main {
+  // width: calc(100% - 20%);
+  display: block;
+  border-left: 1px solid $bg_light_grey;
+  width: calc(100% - 268px);
+
+  .vs-lft {
+    width: 100%;
+    //height: 632px;
+  }
+}
+
+.vscol-2 {
+  width: 306px;
+  min-width: 306px;
+  max-width: 306px;
+  float: left;
+  min-height: 632px;
+  text-align: center;
+  background: #f7f9fb;
+  position: relative;
+  border: 1px solid #eef2f6;
+  min-height: calc(100vh - 300px);
+
+  &.back_color {
+    height: 100%;
+    overflow: hidden;
+    overflow-y: scroll;
+    padding-right: 20px;
+    -ms-padding-right: 0px;
+    margin-right: -20px;
+    min-width: 326px;
+    max-width: 326px;
+    min-height: 100%;
+    max-height: 100%;
+
+    &::-webkit-scrollbar {
+      width: 0px;
+      /* Remove scrollbar space */
+      background: transparent;
+      /* Optional: just make scrollbar invisible */
+    }
+
+    //&::
+  }
+
+  .vs-plus {
+    width: 54px;
+    height: 54px;
+    // background: $blue_color;
+    border-radius: 50%;
+    margin: auto;
+
+    i {
+      padding: 22px;
+      color: #fff;
+    }
+
+
+  }
+}
+
+.vs2-cont {
+  position: absolute;
+  //position: relative;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  width: 90%;
+
+  .animated {
+    -webkit-animation-duration: 0.1s;
+    animation-duration: 0.1s;
+  }
+
+  p {
+    margin-top: 13px;
+    color: $link;
+    font-size: $fnt12;
+  }
+}
+
+.drp-crs {
+  right: 50%;
+
+  .vs-plus {
+    // background: $dark_grey;
+  }
+
+  .start {
+    display: block;
+  }
+
+  .drp-card {
+    display: block;
+
+    .drp-licn {
+      padding: 11px 15px 9px 12px;
+    }
+  }
+
+  .cstm_plus {
+    width: 54px;
+    height: 54px;
+    background: #242B2ECC 0% 0% no-repeat padding-box;
+    opacity: 1;
+    color: #fff;
+    border: none;
+    border-radius: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+  }
+
+  .drp-crd {
+    margin-bottom: 10px;
+    float: left;
+    width: 100%;
+  }
+}
+
+.cstm_plus.bg_blue {
+  background: $blue_color;
+  width: 54px;
+  height: 54px;
+  border-radius: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+
+}
+
+.vs-src {
+  // display: inline-block;
+  top: 50px;
+  position: absolute;
+  left: 32px;
+  display: flex;
+  justify-content: center;
+  width: 213px;
+  height: 95px;
+  background: #fff;
+  border-radius: 10px;
+  margin-top: 16px;
+  box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.1);
+  vertical-align: middle;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -14px;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 7px;
+    border-style: solid;
+    border-color: transparent transparent white transparent;
+  }
+
+  .span1 {
+    display: flex;
+    padding: 20px 20px;
+    border-right: 1px solid #f6f7fa;
+    font-size: $fnt14;
+    vertical-align: middle;
+
+    button {
+      border: none;
+      background: $white_background;
+      font-weight: 550;
+      color: rgba(36, 43, 46, 0.8);
+    }
+
+    i {
+      display: block;
+      color: $blue_color;
+      font-size: 20px;
+    }
+  }
+
+  .span2 {
+    display: flex;
+    padding: 20px 20px;
+    font-size: $fnt14;
+    vertical-align: middle;
+
+    button {
+      border: none;
+      background: $white_background;
+      font-weight: 550;
+      color: rgba(36, 43, 46, 0.8);
+
+
+    }
+
+    i {
+      display: block;
+      color: $blue_color;
+      font-size: 20px;
+    }
+  }
+}
+
+.drp-card {
+  @include flex_btwn(flex, space-between);
+  border-radius: 12px;
+  width: 333px;
+  background: $white_background;
+  position: absolute;
+  top: 63px;
+  left: 71px;
+  box-shadow: 0px 4px 14px rgba(224, 223, 223, 1);
+  max-height: 334px;
+  overflow-y: auto;
+  width: 100%;
+  align-items: center;
+  padding: 13px;
+
+  .drp-licn {
+    width: 100%;
+    text-align: left;
+    font-size: $fnt12;
+    padding: 11px 15px 9px 25px;
+
+    i {
+      margin-right: 10px;
+    }
+  }
+
+  .vsbt-cont {
+    float: left;
+    width: auto;
+    border: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+
+    .vsbt-para {
+      h3 {
+        font-size: $fnt14;
+
+
+      }
+    }
+  }
+
+  span {
+    width: 22px;
+    float: right;
+    height: 22px;
+    background: $blue_color;
+    border-radius: 50%;
+    text-align: center;
+    padding: 1px 0;
+    display: inline-block;
+
+    i {
+      color: #fff;
+      font-size: $fnt12;
+      text-align: center;
+    }
+  }
+}
+
+.vsbt-img {
+  width: 45px;
+  height: 45px;
+  text-align: center;
+
+  img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+
+.vsbt-para {
+  margin-left: 6px;
+
+  p {
+    font-size: $fnt8;
+    text-align: left;
+    margin-top: 5px;
+  }
+}
+
+/*=============== End right panel vs==========*/
+
+/*=========== START FULL MODAL PAGE CSS============*/
+.mdal-box {
+  .mdal-main {
+    padding-right: 0px !important;
+  }
+
+  .tech-cont {
+    input[type='text'] {
+      background: transparent;
+      color: $light_grey;
+    }
+  }
+
+  .modal-header {
+    border-bottom: none;
+    padding: 0;
+
+    button {
+      @include flex_align_center(flex, center);
+      position: absolute;
+      right: 50px;
+      background: $dark_grey;
+      padding: 4px 16px;
+      color: #fff;
+      border-radius: 10px;
+      text-shadow: none;
+      font-weight: 100;
+      font-size: $fnt28;
+
+      span {
+        font-size: 12px;
+        margin-left: 8px;
+        text-transform: capitalize;
+        letter-spacing: 1px;
+      }
+    }
+  }
+
+  .modal-dialog {
+    width: 100%;
+    height: 100vh;
+    margin: 0px;
+
+    .modal-content {
+      background: rgba(239, 241, 242, 0.8);
+      backdrop-filter: blur(9px);
+      -webkit-backdrop-filter: blur(9px);
+
+      .tech-ipt {
+        float: none;
+        border-bottom: none;
+      }
+    }
+  }
+
+  .tech-ipt {
+    span {
+      position: absolute;
+      right: 14px;
+      color: $light_grey;
+      top: 22px;
+    }
+  }
+}
+
+.mdal-pop {
+  max-width: 1022px;
+  margin: auto;
+  position: relative;
+
+  .blu-ipn {
+    color: $blue_color;
+    left: 12%;
+  }
+}
+
+.grn-bttn {
+  background: $gradnt_green2 !important;
+
+  &::before {
+    line-height: 23px;
+    content: '\2713';
+    color: #fff;
+    font-size: $fnt16;
+  }
+}
+
+.mdal-box {
+  .modal-header {
+    button {
+      &.close {
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+// .tech-ipt {
+//   width: 100%;
+//   float: left;
+//   padding-top: 146px;
+//   position: relative;
+//   border-bottom: 1px solid #fff;
+
+//   label {
+//     position: absolute;
+//     font-size: 37px;
+//     left: 0;
+//     margin-bottom: 0;
+//     top: 3px;
+//     font-weight: 700;
+//     // font-family: sans-serif;
+//   }
+// }
+
+.tech-cont {
+  position: relative;
+
+  input {
+    height: 63px;
+    padding-left: 220px;
+    padding-right: 82px;
+  }
+
+  input[type='text'] {
+    font-size: 38px;
+    width: 100%;
+    border: none;
+    background: #eef2f6;
+    outline: none;
+    color: #03a9f4;
+  }
+}
+
+/*=========== START MODAL DROPDOWN CSS============*/
+
+.drp-crd {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 13px;
+
+  .vsbt-cont {
+    float: left;
+    width: auto;
+    border: none;
+    padding: 0;
+  }
+
+  span {
+    float: right;
+    width: 22px;
+    height: 22px;
+    background: #03a9f4;
+    border-radius: 50%;
+    text-align: center;
+    padding: 1px 0;
+    display: inline-block;
+
+    i {
+      color: #fff;
+      font-size: 12px;
+      text-align: center;
+    }
+  }
+}
+
+.vsbt-img {
+  width: 45px;
+  height: 45px;
+  text-align: center;
+}
+
+.grn-bttn {
+  background: #70eb83 !important;
+}
+
+.drop-opt {
+  background: $white_background;
+  border-radius: 16px;
+  margin-top: 31px;
+}
+
+.vs-minus {
+  float: right;
+  width: 15px;
+  height: 15px;
+  background: $link;
+  margin: 6px 6px 0px 0px;
+  border-radius: 50%;
+  position: absolute;
+  right: 20px;
+
+  i {
+    font-size: 9px;
+    position: absolute;
+    top: 3px;
+    left: 4px;
+    color: #fff;
+  }
+}
+
+/*=========== END MODAL DROPDOWN CSS============*/
+
+/*=========== END FULL MODAL PAGE CSS============*/
+
+/*=========== START VS PAGE BOXs CSS============*/
+
+.vs-lft.d_flex {
+  display: flex;
+  //height: auto;
+}
+
+.vs2_box {
+  .box-img {
+    @include flex_align_center(flex, center);
+    background: $white_background;
+    padding: 28px 0px;
+
+    .vsbt-para {
+      p {
+        color: $dark_grey;
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+.iphn-table {
+  background: $white_background;
+  width: 100%;
+}
+
+.iphn-table {
+  &.box_tbl {
+    .iphn-row {
+      text-align: left;
+      @include flex_btwn(flex, space-between);
+
+      .iphn-col {
+        width: auto;
+      }
+    }
+  }
+}
+
+.iphn-row {
+  &.flex_column {
+    flex-direction: column;
+  }
+
+  .iphnimg-col {
+    width: 33%;
+  }
+}
+
+.vbox-hdg {
+  text-align: left;
+  padding: 10px 0px 10px 10px;
+  border-top: 1px solid #f5f7f9;
+
+  p {
+    margin-top: 10px;
+    line-height: 22px;
+  }
+
+  h3 {
+    font-weight: 600;
+    font-size: $fnt18;
+  }
+}
+
+.mt-30 {
+  margin-top: 25px !important;
+}
+
+.bor_blue {
+  border: 2px solid $blue_color;
+}
+
+.vs2_box {
+  .edit_choice {
+    display: inline-block;
+    line-height: 1;
+    background: $blue_color;
+    color: #fff;
+    padding: 6px 8px;
+    border-radius: 0px 0px 7px 7px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+  }
+}
+
+.share_link {
+  float: right;
+  position: absolute;
+  right: 0;
+  color: $dark_grey;
+}
+
+.hdr {
+
+  .hdr-nav {
+    .vs-btn {
+      background: $blue_color;
+      color: #fff;
+    }
+  }
+}
+
+.box1_plus {
+  .drp-crs {
+    .vs-plus {
+      background: $blue_color;
+    }
+  }
+}
+
+.wrap_both {
+  display: flex;
+}
+
+.iphn-row {
+  border-top: 2px solid #f9fafb;
+}
+
+.iphn-row {
+  .iphn-hdg {
+    width: 100%;
+    padding: 15px 9px;
+    color: #242b2e;
+    text-transform: uppercase;
+    font-size: 13px;
+  }
+
+  .iphn-col {
+    width: 60%;
+    float: left;
+    padding: 15px 9px;
+    color: #575c5e;
+  }
+}
+
+.iphn-flex {
+  display: flex;
+  text-align: center;
+  flex-wrap: wrap;
+
+  &.flex_column {
+    .iphnimg-col {
+      width: 33%;
+    }
+  }
+}
+
+.compare {
+  width: 100%;
+  height: 70px;
+  margin-bottom: 10px;
+
+  img {
+    max-height: 100%;
+    max-width: 100%;
+  }
+}
+
+.iphnimg-col {
+  margin-bottom: 21px;
+  width: 25%;
+  text-align: center;
+}
+
+.custm_radio [type='radio']:checked,
+.custm_radio [type='radio']:not(:checked) {
+  position: absolute;
+  left: -9999px;
+}
+
+.custm_radio [type='radio']:checked+label,
+.custm_radio [type='radio']:not(:checked)+label {
+  position: relative;
+  padding-left: 28px;
+  cursor: pointer;
+  line-height: 20px;
+  display: inline-block;
+  color: #666;
+  font-weight: 500;
+}
+
+.custm_radio [type='radio']:checked+label:before,
+.custm_radio [type='radio']:not(:checked)+label:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #ddd;
+  border-radius: 100%;
+  background: #fff;
+}
+
+.custm_radio [type='radio']:checked+label:after,
+.custm_radio [type='radio']:not(:checked)+label:after {
+  content: '';
+  width: 12px;
+  height: 12px;
+  background: $blue_color;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  border-radius: 100%;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.custm_radio [type='radio']:not(:checked)+label:after {
+  opacity: 0;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+
+.custm_radio [type='radio']:checked+label:after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+.iphnimg-col .custm_radio [type='radio']:checked+label:before,
+.iphnimg-col .custm_radio [type='radio']:not(:checked)+label:before {
+  left: 50%;
+  top: 9px;
+  margin-left: -9px;
+}
+
+.iphnimg-col .custm_radio [type='radio']:checked+label:after,
+.iphnimg-col .custm_radio [type='radio']:not(:checked)+label:after {
+  top: 12px;
+  left: 50%;
+  background: #dddfde;
+  margin-left: -6px;
+}
+
+.iphnimg-col .custm_radio [type='radio']:checked+label,
+.iphnimg-col .custm_radio [type='radio']:not(:checked)+label {
+  padding-left: 0;
+  padding-top: 32px;
+}
+
+/*=========== END VS PAGE BOXs CSS============*/
+.modal {
+  display: block;
+}
+
+.modal-open .modal {
+  overflow-x: hidden;
+  /* overflow-y: auto; */
+}
+
+.modal_view {
+
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  height: 100%;
+  right: 0;
+  top: 0;
+  z-index: 999999;
+
+  .left_side {
+    transform: translateX(0);
+    transition: transform 0.35s;
+  }
+}
+
+.back_color {
+  background: white;
+}
+
+.pointer {
+  cursor: pointer;
+}

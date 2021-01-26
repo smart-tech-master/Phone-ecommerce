@@ -1,0 +1,268 @@
+@import 'assets/scss/main.scss';
+
+.tags_row {
+  @include fullWidth(100%, left);
+  padding-left: 212px;
+  position: absolute;
+  top: -5px;
+
+  .active {
+    background: $dark_grey;
+  }
+}
+
+#myModal {
+
+  background: rgba(0, 0, 0, 0.4);
+
+  .modal-dialog {
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: fixed;
+    width: 1442px;
+    max-width: 875px;
+  }
+}
+
+.tag {
+  color: #fff;
+  width: auto;
+  background: #a4a7a9;
+  border-radius: 6px;
+  display: inline-block;
+  padding: 6px 8px;
+  font-size: 10px;
+  border: none;
+  margin-left: 5px;
+}
+
+.m_item_row {
+  @include fullWidth(100%, left);
+  @include flex_btwn(flex, space-between);
+  margin-top: 20px;
+}
+
+.drop_lft {
+  select {
+    border: none;
+    box-shadow: none;
+    border-radius: 8px;
+    margin-right: 10px;
+    padding: 10px 22px 10px 14px;
+    height: auto;
+    -webkit-appearance: none;
+    background: $primary-color url(../../assets/images/icon-arrow.svg) no-repeat;
+    background-position: 93% 15px;
+    text-transform: uppercase;
+    font-size: $fnt10;
+  }
+}
+
+.filter_icn {
+  background: $blue_color;
+  border-radius: 7px;
+  color: #fff;
+  padding: 4px 8px;
+  margin-right: 10px;
+}
+
+.drop_rgt {
+  font-size: $fnt12;
+  color: $blue_color;
+  background-color: $white_background;
+  border: none;
+}
+
+.m_item_row_lft {
+  @include flex_align_center(flex, center);
+}
+
+.m_mobile_icn {
+  width: 35px;
+  height: 35px;
+
+  img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+
+.m_mobile_contnt {
+  h4 {
+    color: $dark_grey;
+    font-size: $fnt14;
+  }
+
+  p {
+    color: $dark_grey;
+    font-size: 10px;
+    opacity: 1;
+    margin-top: 3px;
+  }
+}
+
+.m_item_row_rgt button {
+  //border: 1px solid $place_holder;
+  border: none;
+  border-radius: 5px;
+  background: transparent;
+  padding: 10px 15px;
+  font-size: $fnt12;
+  color: $dark_grey;
+}
+
+.iphn-tab {
+  .nav-pills {
+    li {
+      &.active {
+        a {
+          background: $white_background !important;
+          color: $dark_grey !important;
+          font-size: $fnt14;
+
+          &:focus {
+            background: $white_background !important;
+            color: $dark_grey !important;
+            font-size: $fnt14;
+          }
+
+          &:hover {
+            background: $white_background !important;
+            color: $dark_grey !important;
+            font-size: $fnt14;
+          }
+        }
+      }
+    }
+  }
+}
+
+.ipn-new {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: $blue_color;
+  line-height: 5px;
+  padding: 2px;
+  border-radius: 0px 3px 0px;
+  color: #fff;
+  font-size: $fnt10;
+}
+
+// recent items
+
+.drp-card {
+  @include flex_btwn(flex, space-between);
+  border-radius: 12px;
+  width: 333px;
+  background: $white_background;
+  position: absolute;
+  top: 63px;
+  left: 71px;
+  box-shadow: 0px 4px 14px rgba(224, 223, 223, 1);
+  max-height: 334px;
+  overflow-y: auto;
+  width: 100%;
+  align-items: center;
+  padding: 13px;
+
+  .drp-licn {
+    width: 100%;
+    text-align: left;
+    font-size: $fnt12;
+    padding: 11px 15px 9px 25px;
+
+    i {
+      margin-right: 10px;
+    }
+  }
+
+  .vsbt-cont {
+    float: left;
+    width: auto;
+    border: none;
+    padding: 0;
+
+    .vsbt-para {
+      h3 {
+        font-size: $fnt14;
+      }
+    }
+  }
+
+  span {
+    width: 22px;
+    float: right;
+    height: 22px;
+    background: $blue_color;
+    border-radius: 50%;
+    text-align: center;
+    padding: 1px 0;
+    display: inline-block;
+
+    i {
+      color: #fff;
+      font-size: $fnt12;
+      text-align: center;
+    }
+  }
+}
+
+.vsbt-img {
+  width: 45px;
+  height: 45px;
+  text-align: center;
+
+  img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+
+.vsbt-para {
+  margin-left: 6px;
+
+  p {
+    font-size: $fnt8;
+    text-align: left;
+    margin-top: 5px;
+  }
+}
+
+.feedback_btn {
+  line-height: 26px;
+}
+
+.btn-header {
+  position: relative;
+  width: 90px;
+  height: 37px;
+  background-color: #fff;
+  color: black;
+  margin: 5px;
+}
+
+.btn-header i {
+  display: none;
+}
+
+.header-icon {
+  position: absolute;
+  width: 80%;
+  top: 88%;
+  color: #03A9F4;
+}
+
+.select-button {
+  background-color: #03A9F4;
+
+  i {
+    display: block;
+  }
+}
+
+.iconbutton-icon {
+  float: left;
+}

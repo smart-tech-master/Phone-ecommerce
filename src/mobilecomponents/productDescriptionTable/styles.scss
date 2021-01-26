@@ -1,0 +1,98 @@
+@import 'assets/scss/main.scss';
+
+.iphn-table {
+  background: $white_background;
+  width: 100%;
+}
+
+.iphn-row {
+  border-top: 2px solid #f9fafb;
+
+  .iphn-hdg {
+    width: 100%;
+    padding: 15px 9px;
+    color: $dark_grey;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: #03A9F4;
+  }
+
+  .iphn-col {
+    width: 60%;
+    float: left;
+    padding: 15px 9px;
+    font-size: 10px;
+
+    &.padd_lft {
+      padding-left: 23px;
+    }
+  }
+
+  .col-grey {
+    width: 40%;
+    float: left;
+    opacity: 0.7;
+  }
+}
+
+// .suggest_btn {
+//   background: white;
+//   text-align: center;
+//   color: $grey_btn;
+//   border-radius: 4px;
+//   position: absolute;
+//   right: 14px;
+//   border: 1px solid #d7dde2;
+//   top: 15px;
+//   padding: 8px 12px;
+//   display: flex;
+//   align-items: center;
+
+//   i {
+//     margin-right: 10px;
+//   }
+// }
+
+.iphn-flex {
+  display: flex;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.iphnimg-col {
+  margin-bottom: 21px;
+  width: 25%;
+  text-align: center;
+}
+
+.compare {
+  width: 100%;
+  height: 70px;
+  margin-bottom: 10px;
+
+  img {
+    max-height: 100%;
+    max-width: 100%;
+  }
+}
+
+.iphnimg-col .custm_radio [type='radio']:checked+label:before,
+.iphnimg-col .custm_radio [type='radio']:not(:checked)+label:before {
+  left: 50%;
+  top: 9px;
+  margin-left: -9px;
+}
+
+.iphnimg-col .custm_radio [type='radio']:checked+label:after,
+.iphnimg-col .custm_radio [type='radio']:not(:checked)+label:after {
+  top: 12px;
+  left: 50%;
+  background: #dddfde;
+  margin-left: -6px;
+}
+
+.iphnimg-col .custm_radio [type='radio']:checked+label,
+.iphnimg-col .custm_radio [type='radio']:not(:checked)+label {
+  padding-left: 0;
+  padding-top: 32px;
+}

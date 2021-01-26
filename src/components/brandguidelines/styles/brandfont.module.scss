@@ -1,0 +1,68 @@
+@import 'assets/scss/main.scss';
+
+.brand_font_part {
+  padding: 20px 79px 20px 79px;
+  background: white;
+
+  .font_part {
+
+    display: flex;
+    justify-content: space-between;
+    margin-top: 37px;
+
+    .font {
+      display: flex;
+
+
+      .rect {
+        width: 141px;
+        height: 141px;
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        box-shadow: 0px 3px 25px #0000001A;
+        border: 1px solid #12121233;
+        border-radius: 12px;
+        opacity: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .font_description {
+        display: flex;
+        flex-direction: column;
+        margin-left: 47px;
+        justify-content: center;
+
+        .margin_adjust {
+          margin-top: 10px;
+          color: #242B2E;
+          font-size: 16px;
+          letter-spacing: 0.64px;
+        }
+      }
+    }
+
+  }
+
+  .small_font {
+    font-size: 24px;
+    font-family: sans-serif;
+  }
+
+  .big_font {
+    font-size: 62px;
+    font-family: sans-serif;
+    letter-spacing: 2.48px;
+  }
+
+  .medium_font {
+    font-size: 28px;
+    font-family: sans-serif;
+  }
+
+  .title_font {
+    font-family: sans-serif;
+    font-size: 28px;
+    font-weight: 900;
+  }
+}

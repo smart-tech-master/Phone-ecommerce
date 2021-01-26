@@ -1,0 +1,136 @@
+@import 'assets/scss/main.scss';
+
+.iphn-hed {
+  padding: 21px 17px 10px 17px;
+  background: $white_background;
+  position: relative;
+  @include fullWidth(100%, left);
+
+  .device-name {
+    font-size: 28px;
+    font-weight: 600;
+  }
+
+  .sug_share {
+    display: flex;
+  }
+}
+
+.star-ratings {
+
+  margin-top: 5px;
+}
+
+.wrap_radio {
+  @include fullWidth(100%, left);
+  @include flex_btwn(flex, space-between);
+  align-items: center;
+}
+
+.wrap_radio span {
+  font-size: $fnt22;
+  color: $dark_grey;
+  font-weight: 600;
+}
+
+.custm_radio [type='radio']:checked,
+.custm_radio [type='radio']:not(:checked) {
+  position: absolute;
+  left: -9999px;
+}
+
+.custm_radio [type='radio']:checked+label,
+.custm_radio [type='radio']:not(:checked)+label {
+  position: relative;
+  padding-left: 28px;
+  cursor: pointer;
+  line-height: 20px;
+  display: inline-block;
+  color: #666;
+  font-weight: 500;
+}
+
+.custm_radio [type='radio']:checked+label:before,
+.custm_radio [type='radio']:not(:checked)+label:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #ddd;
+  border-radius: 100%;
+  background: #fff;
+}
+
+.custm_radio [type='radio']:checked+label:after,
+.custm_radio [type='radio']:not(:checked)+label:after {
+  content: '';
+  width: 12px;
+  height: 12px;
+  background: $blue_color;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  border-radius: 100%;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.custm_radio [type='radio']:not(:checked)+label:after {
+  opacity: 0;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+
+.custm_radio [type='radio']:checked+label:after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+.click_drp {
+  @include fullWidth(100%, left);
+  @include flex_btwn(flex, center);
+  align-items: center;
+  margin-top: 10px;
+
+  .iphn-swt i {
+    font-size: $fnt12;
+    color: #fff;
+  }
+}
+
+.iphn-swt {
+  width: 44px;
+  background: $link;
+  border-radius: 7px;
+  margin: auto;
+  position: relative;
+  text-align: center;
+}
+
+.suggest_part {
+
+  &:after {
+    content: '';
+    width: 0;
+    height: 30px;
+    top: 19px;
+    position: absolute;
+    border: 1px solid #DEE5EC;
+    right: 92px;
+  }
+
+  .suggest_title {
+    margin-left: 10px;
+  }
+}
+
+.share_part {
+  margin-left: 30px;
+
+  .share_title {
+    margin-left: 10px;
+  }
+}

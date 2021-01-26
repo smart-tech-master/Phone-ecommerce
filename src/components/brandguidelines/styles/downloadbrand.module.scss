@@ -1,0 +1,42 @@
+@import 'assets/scss/main.scss';
+
+.download_part {
+
+  padding: 30px 79px 30px 79px;
+  background: white;
+
+  .brand_part {
+    display: block;
+    width: 50%;
+
+    .brand_title {
+      color: #242B2ECC;
+      font-size: 18px;
+    }
+
+    .see_brand_button {
+      cursor: pointer;
+      text-align: center;
+      color: white;
+      // font-size: $fnt18;
+      font-size: 18px;
+      width: 278px;
+      height: 74px;
+      background: $blue_color;
+      box-shadow: 0px 3px 6px $grey_shadow;
+      border: 2px solid $blue_color;
+      border-radius: 6px;
+      margin-top: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      letter-spacing: 1px;
+
+    }
+
+    .download_title {
+      padding-left: 10px;
+    }
+
+  }
+}

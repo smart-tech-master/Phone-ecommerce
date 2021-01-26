@@ -1,0 +1,147 @@
+@import 'assets/scss/main.scss';
+
+.spec-container {
+  height: 100% !important;
+
+  .iphn-tab {
+    height: 100%;
+  }
+}
+
+.social_part {
+  top: 50px;
+  position: absolute;
+  right: 20px;
+  justify-content: space-between;
+
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 0px 4px 14px #00000026;
+  border-radius: 20px;
+  margin-top: 16px;
+  vertical-align: middle;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -14px;
+    right: 8%;
+    border-width: 7px;
+    border-style: solid;
+    border-color: transparent transparent white transparent;
+  }
+
+  .back_part {
+
+    border-bottom: 1px solid #eef2f6;
+    padding: 7px;
+    cursor: pointer;
+
+
+    .icon_size {
+      font-size: 14px;
+    }
+
+    .back_title {
+      margin-left: 10px;
+      font-size: 12px;
+    }
+  }
+
+  .share_social_part {
+    display: flex;
+    margin: 16px;
+  }
+
+  .bottom_part {
+    height: 134px;
+    background: #1FAFF0 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 0px 0px 12px 12px;
+    opacity: 1;
+    padding: 16px;
+
+    .bottom_part1 {
+      height: 84px;
+      background: #FFFFFF 0% 0% no-repeat padding-box;
+      border: 1px solid #242B2E2B;
+      border-radius: 4px;
+      opacity: 1;
+    }
+
+    .bottom_part2 {
+      text-align: center;
+
+      p {
+        color: white;
+        font-family: "ProximaNova-Regular",
+          serif;
+        margin-top: 8px;
+        letter-spacing: 0;
+        font-size: 10px;
+
+      }
+    }
+
+  }
+
+  .link_part {
+    text-align: center;
+    background: #91A8BF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 0px 0px 12px 12px;
+    opacity: 1;
+    padding: 16px;
+
+    p {
+      color: white;
+      font-family: "ProximaNova-Regular",
+        serif;
+      margin-top: 8px;
+      letter-spacing: 0;
+      font-size: 10px;
+
+    }
+  }
+
+  .face_style {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 43px;
+    height: 43px;
+    background: #3D5A96 0% 0% no-repeat padding-box;
+    opacity: 1;
+    border-radius: 50%;
+
+    .face_name {
+      font-size: 18px;
+      color: white
+    }
+
+  }
+
+  .twitter {
+
+    background: #2AA3EF 0% 0% no-repeat padding-box !important;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  .chain {
+    background: #91A8BF 0% 0% no-repeat padding-box !important;
+    margin-right: 10px;
+  }
+
+  .embed {
+
+    background: #03A9F4 0% 0% no-repeat padding-box !important;
+  }
+
+
+
+}
+
+.rotate90 {
+
+  transform: rotate(90deg);
+}

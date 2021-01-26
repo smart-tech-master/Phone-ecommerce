@@ -1,0 +1,101 @@
+@import 'assets/scss/main.scss';
+
+// body {
+//   overflow: hidden !important;
+// }
+#explore-page {
+  overflow: hidden !important;
+}
+
+.custom-switch .custom-control-label::before {
+  left: -2.25rem;
+  width: 2.75rem;
+  height: 22px;
+  pointer-events: all;
+  border-radius: 1.5rem;
+}
+
+.custom-switch .custom-control-label::after {
+  top: calc(0.25rem + 3px);
+  left: calc(-2.25rem + 2px);
+  width: calc(1rem - 4px);
+  height: calc(1rem - 4px);
+  height: 16px;
+  width: 15px;
+  background-color: #adb5bd;
+  border-radius: 2.5rem;
+  transition: background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out, -webkit-transform .15s ease-in-out;
+  transition: transform .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  transition: transform .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out, -webkit-transform .15s ease-in-out;
+}
+
+.star-ratings .widget-svg {
+  width: 20px;
+  height: 20px;
+}
+
+.header-wrapper {
+  padding-top: 15px;
+  padding-bottom: 16px;
+  background: white;
+}
+
+.main_style {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.filter_font {
+  font-size: 16px;
+}
+
+.sub_row_first {
+
+  padding-top: 10px;
+
+  .key_font {
+    font-size: 12px;
+    font-weight: 600;
+  }
+}
+
+.filter_part {
+  margin-top: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  border: 1px solid #242B2ECC;
+  border-radius: 8px;
+  opacity: 1;
+  text-align: center;
+
+  .filter_sub_part {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    .filter_search {
+      height: 18px;
+      width: 17px;
+      margin-right: 5px;
+    }
+
+    .filter_close {
+      width: 24px;
+      height: 24px;
+      margin-left: 5px;
+    }
+
+    .filter_input {
+      width: 150px;
+      height: 20px;
+      border: none;
+      outline: none;
+    }
+  }
+
+}

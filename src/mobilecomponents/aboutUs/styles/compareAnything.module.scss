@@ -1,0 +1,107 @@
+@import 'assets/scss/main.scss';
+
+.text {
+  display: inline-block;
+  width: 30%;
+  min-width: 315px;
+
+  h1 {
+    font-size: 72px;
+    color: $dark_grey;
+    max-width: 100%;
+    margin: 82px 0 18px 0;
+    max-width: 100%;
+    font-size: 72px;
+    letter-spacing: -3.56px;
+    font-family: sans-serif;
+    font-weight: 900;
+  }
+
+  .description {
+    display: inline-block;
+    width: 92%;
+    //font-size: $fnt22;
+    font-size: 22px;
+    border-left: 3px solid #03a9f4;
+    padding-left: 17px;
+    font-weight: 100;
+    line-height: 1.4;
+
+  }
+}
+
+.photos {
+  width: 60%;
+  position: relative;
+  margin: 82px 0 0 auto;
+  overflow: hidden;
+  padding-right: 103px;
+  min-width: 680px;
+
+  .cards,
+  .background {
+    width: 100%;
+  }
+
+  .mocup,
+  .photo {
+    position: absolute;
+    bottom: 0;
+    right: -148px;
+    width: 116%;
+  }
+}
+
+.compare_anything_part {
+  color: $white_background;
+  background: transparent linear-gradient(268deg, $gradnt_dark_blue1 0%, $gradnt_dark_blue2 100%) 0% 0% no-repeat padding-box;
+  padding-left: 79px;
+  height: 639px;
+  overflow: hidden;
+  display: flex;
+  min-width: 1570px;
+
+  .text {
+
+    .description {
+      border-color: $white_background;
+    }
+
+    h1 {
+      color: $white_background;
+    }
+
+    .start {
+      width: 239px;
+      height: 84px;
+      background-color: $gradnt_light_blue1;
+      box-shadow: 0px 3px 6px $grey_shadow;
+      border-radius: 6px;
+      font-size: $fnt18;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 61px;
+      cursor: pointer;
+    }
+  }
+
+  .photos {
+    margin-top: 0;
+
+    .screen1,
+    .screen2 {
+      position: absolute;
+    }
+
+    .screen1 {
+      top: 160px;
+      right: -170px;
+    }
+
+    .screen2 {
+      top: -144px;
+      right: 170px
+    }
+  }
+}

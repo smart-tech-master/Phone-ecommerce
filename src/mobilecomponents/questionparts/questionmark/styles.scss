@@ -1,0 +1,32 @@
+@import 'assets/scss/main.scss';
+
+.avatar-input {
+  display: flex;
+  position: relative;
+}
+
+
+.img-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+.post-title {
+  padding: 10px;
+
+  .post-name {
+
+    font-size: 15px;
+    font-weight: 600;
+
+  }
+
+  .post-time {
+
+    margin-left: 10px;
+    font-size: 11px;
+    color: #91A8BF;
+    opacity: 1;
+  }
+}
